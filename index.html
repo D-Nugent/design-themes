@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='style.css' type='text/css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Architects+Daughter&family=Archivo+Narrow&family=Courgette&family=Crimson+Text&family=EB+Garamond&family=Great+Vibes&family=Josefin+Slab&family=Lato&family=Libre+Baskerville&family=Lobster&family=Oswald&family=Pacifico&family=Playfair+Display&family=Poppins&family=Prompt&family=Raleway&family=Sansita&family=Shadows+Into+Light&family=Slabo+27px&family=Sue+Ellen+Francisco&family=Ubuntu&family=Zilla+Slab&display=swap" rel="stylesheet">
+  <title>CSS Style & Design</title>
+</head>
+
+<body class="body">
+<header class="header">
+  <nav class="nav_bar">
+    <ul>
+        <li><a class="pagelink" href=#top>Introduction</a></li>
+        <li><a class="pagelink" href=#jump_cc>Reference Codes & Tags</a></li>
+        <li><a class="pagelink" href=#jump_p>Positioning</a></li>
+        <li><a class="pagelink" href=#jump_rc>Referencing Color</a></li>
+        <li><a class="pagelink" href=#jump_ct>Color Themes</a></li>
+        <li><a class="pagelink" href=#jump_rt>Referencing Typography</a></li>
+        <li><a class="pagelink" href=#jump_tt>Typography Themes</a></li>
+    </ul>      
+  </nav>
+  <div class="title_container">
+    <h1 class="web_title">CSS Style & Design</h1>
+  </div>
+</header>
+
+<main class="main">
+<!--INTRODUCTION-->
+    <div class="introduction">
+        <h3 class="section_heading">Introduction<hr></h3>
+        <p class="section_content">This website is intended to act as a reference for CSS design styles,
+             themes and code. The sections below will reference a number of tools on how to style a website
+             effectively using the right tehcniques and also present a number of color-sets and schemes that
+             are attractive in design. Codecademy has a strong 'cheatsheet' on CSS content available <a href="https://www.codecademy.com/learn/paths/web-development/tracks/getting-more-advanced-with-design/modules/learn-css-box-model/cheatsheet">here</a><br><br></p>
+        <em><p>This is the beginning - the start of more to come.</p></em>     
+    </div>
+<!--REFERENCE CODES-->
+    <div class="nav_holder" id="jump_cc"></div>
+    <div class="container css_codes">
+        <h3 class="section_heading">CSS - Reference Codes & Tags<hr></h3>
+        <p class="section_content">In order to create an effective, user-appealing web-page it is important to have a comprehensive knowledge of the
+            codes and tags that comprise all styling elements of a webpage. When considering how to apply stylign it is important to consider the tiered
+             structure:</p>
+        <ol>
+            <li>Element</li>
+            <li>Class</li>
+            <li>ID</li>
+        </ol>
+        <p>In a previous project I had compiled a comprehensive list of HTML/CSS Codes & Tags. This library can be found below.</p>
+        <div class="tag_link"><a href="../Code Examples/index.html">Library of Tags</a></div>
+    </div>
+<!--POSITIONING-->
+    <div class="nav_holder" id="jump_p"></div>
+    <div class="container positioning">
+        <h3 class="section_heading">CSS - Positioning<hr></h3>
+        <p class="section_content"><img class="box_model" src="media/The Box Model.PNG">When it comes to positioning you should think of it as the bones or supporting beams
+             of your website. If you don't set them up correctly it will ultimately make your website appear dull and
+              messy. Early website design used tables/boxes in order to create the structure of a website - this is now
+               an outdated practice which is not recommended due to it's lack of flexibility. While some visual features
+                and interactivity must be done through other code such as JavaScript, the bulk of appearance comes from
+                 CSS.<br><br>Arguably the most important thing to learn for appearance and positioning is 'The Box Model', This
+                  represents the structure of almost all elements and the impact which the content, padding, border and
+                   margin have upon the appearance of said item and the webpage. This is represented in the accompanying
+                    image. Also of great importance are the tags <strong>'display'</strong> and <Strong>'position'</strong>, the former determines the
+                     behaviour of an element and how it will place itself on the webpage while the latter allows you to
+                      manipulate this position in a more targeted manner. The two tags are commonly used together to
+                       create the desired effect.
+        </p>
+        
+    </div>
+<!--REFERENCING COLOR-->
+    <div class="nav_holder" id="jump_rc"></div>
+    <div class="container ref_color">
+        <h3 class="section_heading">CSS - Referencing Color<hr></h3>
+        <p class="section_content">Color is vital when it comes to any web-design and not just vibrant color but also your 'non-colors', the grayscale
+             from white to black is just as important to give a feeling of immersion. Whether right to do so or not, people trust what (or who) they
+              find attractive. For example, if you have two almost identical products being marketed - people will consistenly purchase from the company
+               that has the more visually engaging website as it instills a sense of confidence in the company - i.e. "This website is impressive and
+                suits my taste/style, they know what they're doing - they probably know what they're doing with x product as well". It may sound
+                 ridiculous but it's true.<br><br> Color is applied to all elements of a webpage but we are more specifically talking about it's
+                  assignment to borders (color:), text (color:) and backgrounds (background-color:). Color can be presented and applied in four
+                  different styles:
+        </p>
+        <ul class="list">
+            <li class="list_title">Named Value</li>
+                <p class="section_content list_content"> Named value refernecing is the simplest and easiest way to color your webpage in that you
+                     simply set the value to a named color such as 'red' and that's that! While there is an extensive
+                      default library of colors (approximately 147 with 17 agreed standard colors: aqua, black, blue, fuchsia, gray, grey, green, lime,
+                        maroon, navy, olive, purple, red, silver, teal, white and yellow), this is still extremely limiting in the scope of what colors
+                        can be used using other methods such as Hex (as you will see shortly). Using named colors is generally considered bad practice
+                         and should be limited to one-off's and 'pre-formatting' stages of projects (i.e. where you are building content and have yet
+                          to decide a theme). The syntax for a named value would be:<br><span class="example_syntax">div {<br>background-color: teal;<br>
+                          }</span>  
+                </p>
+            <li class="list_title">Hexadecimal (Hex)</li>
+                <p class="section_content list_content">Hexadecimal or Hex is the most commonly used color referencing format and appears as a hashtag
+                 followed by either 3 or 6 numbers/letters. At first glance, Hex can be a little intimadating as it is a syntax and representation that people
+                 are not commonly familiar with. The digits that follow the hashtag are pairings that represent a mix or ratio of 'red', 'blue' and 'green'.
+                  These digits range from '00' to 'FF' which represents a scale from 0 to 256 - for clarity you can view this <span class="hexscale_ref">here.<img class="hexscale_image" src="media/All+hex+values+mapped+to+numbers.png"></span>
+                  For example, take the color 'teal', this color would be represented as '#008080' where [#]=hastag, [00]=red, [80]=green & [80]=blue. In terms
+                 of syntax this would look as follows:<br><span class="example_syntax">div {<br>background-color: #008080;<br>}</span></p>
+                
+            <li class="list_title">Red-Green-Blue (RGB)</li>
+                <p class="section_content list_content">Red-Green-Blue or RGB is the second most commonly used color referencing format and is popular due to
+                     it's range of color selection and accessibility for users. In theory it follows the same syntax as as Hex in that it presents a combination
+                      of the values Red, Green and Blue. Each value is presented numerically on a scale from 0 to 256. The syntax is presented as follows:
+                      <br><span class="example_syntax">div {<br>background-color: rgb(0, 129, 129);<br>}</span>
+                </p>
+            <li class="list_title">Hue-Saturation-Lightness(HSL)</li>
+                <p class="section_content list_content">Hue-Saturation-Lightness or HSL is another color referencing format. It is one of the least commonly
+                     used syntax, largely because of it's lack of accessibility. Those who are familiar with phtoography or digital design will understand the
+                     influence of hue, saturation and lightness on an image or photo. As with previous references, HSL uses a scale for three identifiers as a
+                      default however it can also be present as HSLa where a represents opacity. The scale for Hue is presented from 0 to 360 (which represents a
+                       degree on a color-wheel for which color it represents), Saturation and Lightness are presented as a percentile between 0-100% and a, or
+                        opacity on a scale between 0 and 1. Where HSLa becomes useful is when you have colors which are not static and need to change in response
+                         to script, the division of these elements allows one to be adjsuted in isolation to the others. The syntax for HSLa is presented as follows:
+                         <br><span class="example_syntax">div {<br>background-color: hsla(120,240,61,1);<br>}</span>
+                </p>
+            <li class="list_title">Bringing It All Together</li>
+                <p class="section_content list_content">All of the above, represent different ways in which you can reference color in css. Take a look
+                     at the below, each of these syntax represent the color 'lavender':</p>
+                <div class="color_together">
+                <p class="named_together">div { background-color: lavender }</p>
+                <p class="hex_together">div { background-color: #e6e6fa }</p>
+                <p class="rgb_together">div { background-color: rgb(230, 230, 250) }</p>
+                <p class="hsl_together">div { background-color: hsla(240, 67%, 94%, 1) }</p>
+            </div>
+        </ul>
+    </div>
+<!--COLOR THEMES-->
+    <div class="nav_holder" id="jump_ct"></div>
+    <div class="container color_themes">
+        <h3 class="section_heading">CSS - Color Themes<hr></h3>
+            <p class="section_content">The below offers a variety of color themes that have been collected for
+                 the purpose of future use. When it comes to color schemes, it is important to not over-do it, you
+                  should limit your palette to 4-6 colors. They don't have to all compliment one another either,
+                   they can contrast and be distinct. It is however important that you consider color theory and
+                    the user experience.
+            </p>
+
+        <div class="themes">
+            <div class="theme theme_a"><h4>Summer Chic</h4>
+                <div class="color color_1"><p>#FF1D58</p></div>
+                <div class="color color_2"><p>#F75990</p></div>
+                <div class="color color_3"><p>#FFF685</p></div>
+                <div class="color color_4"><p>#00DDFF</p></div>
+                <div class="color color_5"><p>#0049B7</p></div>
+            </div>
+
+            <div class="theme theme_b"><h4>Soft Beach</h4>
+                <div class="color color_1"><p>#51e2f5</p></div>
+                <div class="color color_2"><p>#9df9ef</p></div>
+                <div class="color color_3"><p>#edf756</p></div>
+                <div class="color color_4"><p>#ffa8b6</p></div>
+                <div class="color color_5"><p>#a28089</p></div>
+            </div>
+
+            <div class="theme theme_c"><h4>Apples & Oranges</h4>
+                <div class="color color_1"><p>#ff1e00</p></div>
+                <div class="color color_2"><p>#f43a09</p></div>
+                <div class="color color_3"><p>#ffb766</p></div>
+                <div class="color color_4"><p>#c2edda</p></div>
+                <div class="color color_5"><p>#68d388</p></div>
+            </div>
+
+            <div class="theme theme_d"><h4>Twilight Desert</h4>
+                <div class="color color_1"><p>#e1b382</p></div>
+                <div class="color color_2"><p>#c89666</p></div>
+                <div class="color color_3"><p>#2d545e</p></div>
+                <div class="color color_4"><p>#12343b</p></div>
+            </div>
+        
+            <div class="theme theme_e"><h4>Unknown Dream</h4>
+                <div class="color color_1"><p>#9bc400</p></div>
+                <div class="color color_2"><p>#8076a3</p></div>
+                <div class="color color_3"><p>#f9c5bd</p></div>
+                <div class="color color_4"><p>#7c677f</p></div>
+            </div>
+            
+            <div class="theme theme_f"><h4>She's Electric</h4>
+                <div class="color color_1"><p>#51dode</p></div>
+                <div class="color color_2"><p>#bf4aa8</p></div>
+                <div class="color color_3"><p>#d9d9d9</p></div>
+            </div>
+
+            <div class="theme theme_g"><h4>Metalic Embrace</h4>
+                <div class="color color_1"><p>#0f2862</p></div>
+                <div class="color color_2"><p>#9e363a</p></div>
+                <div class="color color_3"><p>#091f36</p></div>
+                <div class="color color_4"><p>#4f5f76</p></div>
+            </div>
+
+            <div class="theme theme_h"><h4>Blueberry Granola</h4>
+                <div class="color color_1"><p>#6B7A8F</p></div>
+                <div class="color color_2"><p>#F7882F</p></div>
+                <div class="color color_3"><p>#F7C331</p></div>
+                <div class="color color_4"><p>#DCC7AA</p></div>
+            </div>
+
+            <div class="theme theme_i"><h4>Worn Diary</h4>
+                <div class="color color_1"><p>#acb7ae</p></div>
+                <div class="color color_2"><p>#82716e</p></div>
+                <div class="color color_3"><p>#e4decd</p></div>
+                <div class="color color_4"><p>#c2b490</p></div>
+            </div>
+            
+            <div class="theme theme_j"><h4>Crisp Mountains</h4>
+                <div class="color color_1"><p>#3d7c47</p></div>
+                <div class="color color_2"><p>#09868b</p></div>
+                <div class="color color_3"><p>#76c1d4</p></div>
+                <div class="color color_4"><p>#f7f7f7</p></div>
+            </div>
+            
+            <div class="theme theme_k"><h4>Data Simple</h4>
+                <div class="color color_1"><p>#6ed3cf</p></div>
+                <div class="color color_2"><p>#9068be</p></div>
+                <div class="color color_3"><p>#e1e8f0</p></div>
+                <div class="color color_4"><p>#e62739</p></div>
+            </div>
+
+            <div class="theme theme_l"><h4>French Picnic</h4>
+                <div class="color color_1"><p>#3a4660</p></div>
+                <div class="color color_2"><p>#c9af98</p></div>
+                <div class="color color_3"><p>#ed8a63</p></div>
+                <div class="color color_4"><p>#845007</p></div>
+            </div>
+    
+            <div class="theme theme_m"><h4>Batman</h4>
+                <div class="color color_1"><p>#feda6a</p></div>
+                <div class="color color_2"><p>#d4d4dc</p></div>
+                <div class="color color_3"><p>#393f4d</p></div>
+                <div class="color color_4"><p>#1d1e22</p></div>
+            </div>
+
+            <div class="theme theme_n"><h4>Mojito</h4>
+                <div class="color color_1"><p>#7dce94</p></div>
+                <div class="color color_2"><p>#3d3d3f</p></div>
+                <div class="color color_3"><p>#f6f5f3</p></div>
+                <div class="color color_4"><p>#f9f8fd</p></div>
+            </div>
+        
+            <div class="theme theme_o"><h4>Jewellery Box</h4>
+                <div class="color color_1"><p>#bd8c7d</p></div>
+                <div class="color color_2"><p>#d1bfa7</p></div>
+                <div class="color color_3"><p>#8e8e90</p></div>
+                <div class="color color_4"><p>#49494b</p></div>
+            </div>
+        
+            <div class="theme theme_p "><h4>Oxford</h4>
+                <div class="color color_1"><p>#cd5554</p></div>
+                <div class="color color_2"><p>#91684a</p></div>
+                <div class="color color_3"><p>#00c07f</p></div>
+                <div class="color color_4"><p>#313d4b</p></div>
+            </div>
+                    
+            <div class="theme theme_q "><h4>Fire & Ice</h4>
+                <div class="color color_1"><p>#b11a21</p></div>
+                <div class="color color_2"><p>#e0474c</p></div>
+                <div class="color color_3"><p>#7acfd6</p></div>
+                <div class="color color_4"><p>#f1f0ee</p></div>
+            </div>
+                    
+            <div class="theme theme_r "><h4>Oceanside</h4>
+                <div class="color color_1"><p>#cae4db</p></div>
+                <div class="color color_2"><p>#dcae1d</p></div>
+                <div class="color color_3"><p>#00303f</p></div>
+                <div class="color color_4"><p>#7a9d96</p></div>
+            </div>
+                                
+            <div class="theme theme_s "><h4>Midnight Orange</h4>
+                <div class="color color_1"><p>#393939</p></div>
+                <div class="color color_2"><p>#ff5a09</p></div>
+                <div class="color color_3"><p>#ec7f37</p></div>
+                <div class="color color_4"><p>#be4f0c</p></div>
+            </div>
+                                
+            <div class="theme theme_t "><h4>Winter Slate</h4>
+                <div class="color color_1"><p>#262626</p></div>
+                <div class="color color_2"><p>#3f3f3f</p></div>
+                <div class="color color_3"><p>#f5f5f5</p></div>
+                <div class="color color_4"><p>#dcdcdc</p></div>
+            </div>
+                                
+            <div class="theme theme_u "><h4>Mint Leaf</h4>
+                <div class="color color_1"><p>#4cb69f</p></div>
+                <div class="color color_2"><p>#f5f5f5</p></div>
+                <div class="color color_3"><p>#201d3a</p></div>
+            </div>
+                                
+            <div class="theme theme_v "><h4>Spring Pastels</h4>
+                <div class="color color_1"><p>#dea6af</p></div>
+                <div class="color color_2"><p>#8cbcd0</p></div>
+                <div class="color color_3"><p>#e6dbc9</p></div>
+            </div>
+                                
+            <div class="theme theme_w "><h4>Forgotten Woods</h4>
+                <div class="color color_1"><p>#de493c</p></div>
+                <div class="color color_2"><p>#608074</p></div>
+                <div class="color color_3"><p>#daefd9</p></div>
+            </div>
+                                            
+            <div class="theme theme_x "><h4>Hunt Or Be Hunted</h4>
+                <div class="color color_1"><p>#c1432e</p></div>
+                <div class="color color_2"><p>#4b6777</p></div>
+                <div class="color color_3"><p>#ce9e62</p></div>
+                <div class="color color_4"><p>#2c2c2c</p></div>
+            </div>
+
+        </div>
+    </div>
+<!--REFERENCING TYPOGRAPHY-->
+    <div class="nav_holder" id="jump_rt"></div>
+    <div class="container ref_typography">
+        <h3 class="section_heading">CSS - Referencing Typography<hr></h3>
+        <p class="section_content">When it comes to the appearance of a website, it is not just the positioning and color of a section that makes
+             it appealing but also the appearance of the content within these sections. One of the ways that this can be achieved is through font-styling.
+              While the default for all web browsers is 'Times New Roman', other fonts can help complete the styling or theme that the designer is going
+               for. When applying font-styles to a webpage it is important to not go over the top, three font-styles should be limited to each webpage and 
+               it is recommended to avoid cursive - ignoring either of these rules will likely result in your website looking messy and hard to read. 
+               Not all fonts are made equal however, different browsers support different font sets with 'Edge' and 'Chrome' supporting the largest
+                number of local fonts. This presents a challenge when creating content as you will need to ensure thast your webpage is visible on multiple
+                 browsers. CSS presents a syntax that helps to combat this, when typing preferred text you chan select 'fall-back fonts', whereby if the
+                  first font is available, then the next will be selected and so on. This is particularly important when referencing external fonts which 
+                  while unlikely, are more prone to fail that local fonts. The syntax for this looks as follows:<br><span class="example_syntax">
+                p {<br>font-family: helvetica, arial, sans serif<br>}</span><br>In this example, the p element will use the font helvetica, if this font is 
+                not available then it will use arial and finally if this is not available it will use the primary local sans serif style font.
+        </p>
+                  
+        <p class="section_content">Many choose to rely upon local font sets, but this can be limiting and prevent the designer for delivering the intended web-design. The
+             alternative is to link your document to external css files, this means that when the user opens the webpage it calls a datafile with the 
+             corresponding font specifications and allows for this to be viewable. There are a number of websites that offer a library of font-styles which 
+             can be used in your webpage. While this applies to a styling element, the link is applied to the top of the html document. The syntax for this 
+             is as follows:<br><span class="example_syntax">&lt;link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"&gt;</span><br>In 
+             this example users are now able to reference and call upon the 'Lato' font and apply this throughout their webpage and be referenced in the 
+             css file.
+        </p>
+        <p class="section_content">If the designer wishes for a font to be called upon within the stylesheet then this can be done using @font-face property. 
+            This is more common when a developer is creating a custom stylesheet that they wish to apply to multiple pages or projects  - a common practice. In 
+            order to do this, a user will apply the below syntax to the top of their css document:<span class="example_syntax">@font-face {<br>font-family: 'Glegoo';
+                <br>src: url('../fonts/Glegoo-Regular.ttf') format('truetype');<br>}</span>
+
+        </p>
+    </div>
+<!--TYPOGRAPHY THEMES-->
+    <div class="nav_holder" id="jump_tt"></div>
+    <div class="container typography_themes">
+        <h3 class="section_heading">CSS - Typography Themes<hr></h3>
+        <p class="section_content">Below you can find a range of font sets, some of which are web-safe fonts and some of which are imported custom
+            fonts (or embedded fonts). When selecting a font for your website/prohect, it is important that you consider a number of factors.<br><br> First 
+            and foremost is readability - it may seem enticing to use a cursive font which has an attractive flow to it but this is not a smart choice 
+            for the body of a webpage as this is usually hard to read. For large bodies of text it is good practice to choose a font-style which is 'serif',
+             this means that the letters have 'feet' or extensions - these fonts typically have letters which are closer together and flow well, making them
+             prime for long passages of text. <br><br>Secondly, you should consider which fonts pair well together, and which contrast one another effectively to draw 
+             distinction from a heading, abstract, quote or body of text. For example, you may consider a sans serif font for your headings and a serif font 
+             for the body of text. <br><br>Thirdly, experiment - just because you have chosen a font at the onset of release does not mean that the font needs to stay 
+             the same - it has been found that different fonts instill different reader/customer reactions. Some fonts (and colors) have led to more sales than 
+             others because of how they draw the reader in and give a sense of confidence or comfort.<br><br>Finally, consider the tone of the page - serious work 
+             calls for serious font - not comic sans! Trust your gut, if it is visually appealing to you and you think it fits, run with it. </p>
+            <h4 class="typography_title">Web-Safe Fonts</h4>
+            <div class="font_styles">
+                <div class="font_style font_style_a"><h1>Arial</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+    
+                <div class="font_style font_style_b"><h1>Verdana</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+    
+                <div class="font_style font_style_c"><h1>Georgia</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_d"><h1>Calibri</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+                
+                <div class="font_style font_style_e"><h1>Cambria</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+                
+                <div class="font_style font_style_f"><h1>Garamond</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_g"><h1>Perpetua</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_h"><h1>Didot</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_i"><h1>American Typewriter</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_j"><h1>Courier</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_k"><h1>Courier New</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+                
+                <div class="font_style font_style_l"><h1>Palatino</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_m"><h1>Bookman</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+                <div class="font_style font_style_n"><h1>Tahoma</h1>
+                    <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                    <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                    <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                    <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                </div>
+
+            <h4 class="typography_title">Embedded Fonts</h4>
+
+            <p>While there are thousands of embedded fonts available online through resources such as Google Fonts or Adobe Fonts, below are a few
+                 examples of some popular fonts available online. You will notice that they have been divided into three common classifications - Serif, 
+                Sans-Serif and Script.</p>
+            
+<!--Fonts: Raleway, Oswald, Lato, Slabo, Playfair Display, Ubuntu, Lobster, Archivo Narrow, Libre Baskerville, Crimson Text, Pacifico,
+    Zilla Slab, Abril Fatface, Great Vibes, Poppins, EB Garamond, Josefin Slab, Shadows Into Light, Architects Daughter, Sue Ellen Francisco,
+    Sansita One, Prompt, Courgette, Alegreya, -->
+        <div class="font_styles">
+            <div class="font_style font_em_style_d"><h1>Slabo 27px</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br>&lt;link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_e"><h1>Playfair Display</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_i"><h1>Libre Baskerville</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_j"><h1>Crimson Text</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" &gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_l"><h1>Zilla Slab</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_x"><h1>Alegreya</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_p"><h1>EB Garamond</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br>link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_q"><h1>Josefin Slab</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+            
+            <div class="font_style font_em_style_m"><h1>Abril Fatface</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> ~&lt;link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_u"><h1>Sansita</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_v"><h1>Prompt</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_o"><h1>Poppins</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+            
+            <div class="font_style font_em_style_f"><h1>Ubuntu</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_h"><h1>Archivo Narrow</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_a"><h1>Raleway</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_b"><h1>Oswald</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" &gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_c"><h1>Lato</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_g"><h1>Lobster</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_k"><h1>Pacifico</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_n"><h1>Great Vibes</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_r"><h1>Shadows Into Light</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_s"><h1>Architects Daughter</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_t"><h1>Sue Ellen Francisco</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+
+            <div class="font_style font_em_style_w"><h1>Courgette</h1>
+                <div class="ex_font ex_font_1"><h2>H2</h2></div>
+                <div class="ex_font ex_font_2"><h3>H3</h3></div>
+                <div class="ex_font ex_font_3"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_4"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <div class="ex_font ex_font_5"><p>The quick brown fox jumps over the lazy dog.</p></div>
+                <p>Source:<br> &lt;link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"&gt; </p>
+            </div>
+        </div>
+
+</main>
+</body>
+
+<footer class="footer">
+    <div class="logo_circle">
+        <div class="logo_d">D~</div>
+        <div class="logo_n">~N</div>
+        <div class="profile_image"><img src="media/83250244_10156460330791086_3951492306003034112_n.jpg"> </div>
+    </div>
+    <h4><strong>Created by:</strong><hr class="footer_hr"> David A. Nugent</h4>
+</footer>
+
+</html>
